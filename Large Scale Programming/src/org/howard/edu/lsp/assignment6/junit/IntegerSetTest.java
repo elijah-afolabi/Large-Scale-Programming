@@ -1,10 +1,8 @@
-import package org.howard.edu.lsp.assignment6.integerset;
+package org.howard.edu.lsp.assignment6.junit;
 import static org.junit.jupiter.api.Assertions.*;
-
 import java.util.*;
-
 import org.junit.jupiter.api.Test;
-
+ 
 
 class IntegerSetTest {
 public ArrayList<Integer> list= new ArrayList<>();

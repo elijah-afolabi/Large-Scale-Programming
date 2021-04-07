@@ -1,6 +1,6 @@
 package org.howard.edu.lsp.assignment6.integerset;
-//import  org.howard.edu.lsp.assignment4.implementation.IntegerSet;
-//import  org.howard.edu.lsp.assignment4.implementation.Listemptyexception;
+
+
 
 /*
      * Driver Class to implement the methods in IntegerSet Class
@@ -9,7 +9,7 @@ package org.howard.edu.lsp.assignment6.integerset;
 import java.util.*;
 
 public class IntegerSetDriver {
-public static void main(String[] args) throws Listemptyexception {
+public static void main(String[] args) throws IntegerSetException {
 	
 ArrayList<Integer> list1= new ArrayList<>();
 ArrayList<Integer> list2= new ArrayList<>();
@@ -68,6 +68,8 @@ System.out.println("The Intersection of set 1 and set 2: "+IntersectSet.getlist(
 System.out.println("Set 1 : "+set1.getlist());
 System.out.println("Set 2 : "+set2.getlist());
 
+IntegerSet DiffSet = set1.diff(set2);
+System.out.println("The Difference of set 1 and set 2: "+ DiffSet.getlist() );
 //clears content of set 2
 set2.clear();
 System.out.println("Set 2 after clear: "+set2.getlist());
@@ -76,7 +78,7 @@ System.out.println("Checking for Largest element in set2 : ");
 try {
 System.out.println("Largest element in set2 : "+set2.largest());
 }
-catch(Listemptyexception e){
+catch(IntegerSetException e){
 	
 	System.out.println("Error occured here!!!!! The list is empty!!!!");
 	}
@@ -105,7 +107,7 @@ System.out.println("Checking for Smallest element in set1 : ");
 try {
 System.out.println("Smallest element in set1 : "+set1.smallest());
 }
-catch(Listemptyexception e){
+catch(IntegerSetException e){
 	
 	System.out.println("Error occured here!!!!! The list is empty!!!!");
 	}

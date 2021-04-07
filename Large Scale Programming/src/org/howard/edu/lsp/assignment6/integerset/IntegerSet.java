@@ -1,6 +1,7 @@
 package org.howard.edu.lsp.assignment6.integerset;
 
 
+
 import java.util.*;
 /**
  *  The class contains all the methods that manipulates(performs different operations on) sets
@@ -70,7 +71,7 @@ public boolean contains(int value) {
 /**
  *   Returns true if set is empty, false otherwise
  */
- public boolean isEmpty() {
+ boolean isEmpty() {
 	
 	boolean result=list.isEmpty();
 	
@@ -82,11 +83,11 @@ public boolean contains(int value) {
 /**
  * 
  * @return Returns the Largest item in the set;
- * @throws Listemptyexception Throws a IntegerSetException if the set is empty
+ * @throws IntegerSetExcepetion  Throws a IntegerSetException if the set is empty
  */
-public int largest() throws Listemptyexception {
+public int largest() throws IntegerSetException  {
 if(list.size()==0) {
-Listemptyexception e= new Listemptyexception();
+	IntegerSetException  e= new IntegerSetException ();
 throw e;
 }
 int max=0;
@@ -101,11 +102,11 @@ return max;
 /**
  * 
  * @return Returns the smallest item in the set;
- * @throws Listemptyexception Throws a IntegerSetException if the set is empty
+ * @throws IntegerSetExcepetion  Throws a IntegerSetException if the set is empty
  */
-public int smallest() throws Listemptyexception {
+public int smallest() throws IntegerSetException  {
 if(list.size()==0) {
-Listemptyexception e= new Listemptyexception();
+	IntegerSetException  e= new IntegerSetException ();
 throw e;
 }
 int min=Integer.MAX_VALUE;
