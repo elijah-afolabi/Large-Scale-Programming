@@ -7,6 +7,8 @@ import org.junit.jupiter.api.Test;
 class IntegerSetTest {
 public ArrayList<Integer> list= new ArrayList<>();
 
+@DisplayName ("Testing the add method")
+
 	@Test
 	public void testAdd() {
 	 ArrayList <Integer> list = new ArrayList<>();
@@ -18,6 +20,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 	  assertTrue(list.size() == 4 && list.contains(10) );
 		
 	}
+
+@DisplayName ("Testing the remove method")
+
 	@Test
 	public void testRemove() {
 	 ArrayList <Integer> list = new ArrayList<>();
@@ -34,7 +39,7 @@ public ArrayList<Integer> list= new ArrayList<>();
 		
 	}
 	
-
+@DisplayName ("Testing to check the length of the list")
 	
 	@Test
 	public void testLength() {
@@ -52,6 +57,8 @@ public ArrayList<Integer> list= new ArrayList<>();
 		    assertEquals(5, list.size());
 		}
 	
+@DisplayName ("Testing the clear method")
+
 	@Test
 	public void testClear() {
 		ArrayList <Integer> list = new ArrayList<>();
@@ -62,6 +69,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 		assertEquals(0, list.size());
 	}
 	
+
+@DisplayName ("Testing the equals method, if two lists are the same")
+
 	@Test
 	public void testEquals() {
 	ArrayList <Integer> list1= new ArrayList<>();
@@ -82,6 +92,8 @@ public ArrayList<Integer> list= new ArrayList<>();
 	
 	}
 	
+
+@DisplayName ("Testing the contains method, if the list contains an certain value ")
 	@Test
 	public void testContains() {
 	ArrayList <Integer> list= new ArrayList<>();
@@ -92,7 +104,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 	assertTrue(list.contains(5));
 	}
 	
-	
+
+@DisplayName ("Testing the largest method for the largest number in the list")
+
 	@Test
 	public void testLargest() throws IntegerSetException{
 	ArrayList <Integer> list= new ArrayList<>();
@@ -112,6 +126,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 	}
 	
 	
+@DisplayName ("Testing the smallest method for the smallest number in the list")
+
+
 	@Test
 	public void testSmallest() throws IntegerSetException{
 	ArrayList <Integer> list= new ArrayList<>();
@@ -129,6 +146,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 	assertEquals(1, min);
 	}
 	
+@DisplayName ("Testing the IsEmpty method to see if list is empty")
+
+
 	@Test
 	public void testIsEmpty() {
 		ArrayList <Integer> list = new ArrayList<>();
@@ -139,6 +159,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 		assertTrue(list.size() == 0);
 	}
 	
+
+@DisplayName ("Testing the Uninion method for the union of two sets")
+
 	@Test
 	public void testUnion() {
 		ArrayList <Integer> list1 = new ArrayList<>();
@@ -161,6 +184,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 		assertTrue(set.size() == 8);
 	}
 	
+
+@DisplayName  ("Testing the UIntersect method for the intersection of two sets")
+
 	@Test
 	public void testIntersect() {
 		ArrayList <Integer> list1 = new ArrayList<>();
@@ -189,6 +215,9 @@ public ArrayList<Integer> list= new ArrayList<>();
 		assertTrue(list4.size() == 2 && list4.contains(1) && list4.contains(7));
 	}
 	
+
+@DisplayName  ("Testing the Diff method for the difference of two sets(S1 -S2)")
+
 	@Test
 	public void testDiff() {
 		ArrayList <Integer> list1 = new ArrayList<>();
