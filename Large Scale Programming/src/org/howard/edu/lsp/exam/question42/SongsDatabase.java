@@ -13,7 +13,7 @@ public class SongsDatabase {
             if(genreMap.containsKey(genre)){
                 genreMap.get(genre).add(songTitle);//adding songTitle with genre
             }else{
-                //making a new set when the genre does not exist and adding it to the hashmap
+                //creates a new set when the genre does not exist and adds it to the hashmap
                 Set<String> newSet = new HashSet<String>();
                 newSet.add(songTitle);
                 genreMap.put(genre,newSet);
@@ -26,7 +26,7 @@ public class SongsDatabase {
         public Set<String> getSongs(String genre) {
     
         	// Code it!!
-            return genreMap.get(genre);//returning the set corresponding to the genre
+            return genreMap.get(genre);//returns the set corresponding to the genre
     
         }
     
@@ -59,7 +59,7 @@ public class SongsDatabase {
 
             //getting songs 
          Set<String> set = db.getSongs("Rap");
-         System.out.println( db.getSongs("Rap") );// prints “Rap”
+         System.out.println( db.getSongs("Rap") );// prints a set of songs in the “Rap” genre
          System.out.println( db.getGenreOfSong("Savage") );// prints “Rap”
          System.out.println( db.getGenreOfSong("Always There"));// prints “Jazz”
 
