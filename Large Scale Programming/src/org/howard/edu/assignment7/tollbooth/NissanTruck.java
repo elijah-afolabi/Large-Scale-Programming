@@ -1,4 +1,4 @@
-package javaTest;
+package org.howard.edu.assignment7.tollbooth;
 
 public class NissanTruck implements Truck {
 	

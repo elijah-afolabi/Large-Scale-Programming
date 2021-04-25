@@ -1,5 +1,4 @@
-package javaTest;
-
+package org.howard.edu.assignment7.tollbooth;
 /** this represents a tollbooth
  *  */
 public interface Tollbooth {
